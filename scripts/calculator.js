@@ -45,21 +45,24 @@ function start() {
 
     function performOperation() {
         //get second display number (first num)
-        a = parseFloat(secondaryDisplay.innerText);
-        b = parseFloat(display.innerText);
-
-        //perform operation
-        var operators = {
-            '+': function(a, b) {return a + b},
-            '-': function(a, b) {return a - b},
-            '÷': function(a, b) {return a / b},
-            '×': function(a, b) {return a * b}
+        console.log(display.innerText + secondaryDisplay.innerText)
+        if (display.innerText != null && secondaryDisplay.innerText != '---') {
+            a = parseFloat(secondaryDisplay.innerText);
+            b = parseFloat(display.innerText);
+    
+            //perform operation
+            var operators = {
+                '+': function(a, b) {return a + b},
+                '-': function(a, b) {return a - b},
+                '÷': function(a, b) {return a / b},
+                '×': function(a, b) {return a * b}
+            }
+    
+            secondaryDisplay.innerText = a + operator + b;
+            display.innerText = operators[operator](a, b);
+    
+            calcDone = true;
         }
-
-        secondaryDisplay.innerText = a + operator + b;
-        display.innerText = operators[operator](a, b);
-
-        calcDone = true;
     }
 
     numberButtons.forEach((numberButton) => {

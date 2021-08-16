@@ -1,51 +1,55 @@
 
 #calculator-body {
-    background-color: coral;
+    background-color: black;
     display: block;
-    width: 550px;
-    height: 750px;
+    width: 400px;
+    height: 690px;
     margin: auto;
     position: relative;
 }
 
+.number-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
 #calculator-buttons {
-    background-color: cornflowerblue;
-    width: 80%;
+    background-color: black;
+    width: 352px;
     margin: auto auto 0 auto;
 }
 
 #calculator-left {
     display: inline-flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 263px;
 }
 
 #calculator-numbers {
     display: block;
-    background-color: crimson;
+    background-color: black;
 }
 
-#calculator-operators {
-    background-color: darkblue;
-    float: right;
+#calculator-right {
+    background-color: black;
     display: inline-flex;
     flex-wrap: wrap;
-    width: 30%;
+    width: 85px;
 }
 
 #calculator-main-display {
-    background-color: darkgreen;
-    width: 80%;
+    background-color: black;
+    width: 340px;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
+    margin: 0 auto 20px auto;
     text-align: right;
     font-size: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #calculator-secondary-display {
-    background-color: darkkhaki;
+    background-color: black;
     width: 80%;
     height: 100px;
     margin-left: auto;
@@ -59,9 +63,9 @@
     color: floralwhite;
 }
 
-.operator-container {
+.button-container {
     flex: 0 0 50%;
-    margin: auto;
+    margin: 3px;
 }
 
 .operator-button {
@@ -71,7 +75,7 @@
 
 #calculator-misc {
     display: block;
-    background-color: yellow;
+    background-color: black;
     width: 100%;
 }
 
@@ -86,10 +90,21 @@
     border: none;
     border-radius: 50%;
     font-size: 30px;
+    margin: 5px;
 }
 
-#zero {
+/* #zero {
     padding: 20px;
     width: 150px;
     border-radius: 25%;
+} */
+
+/* #button-wrapper {
+    width: 89.7%;
+    margin: 0 auto;
+    position: relative;
+} */
+
+.button-wrapper {
+    margin: 0 auto;
 }
