@@ -1,0 +1,95 @@
+
+#calculator-body {
+    background-color: coral;
+    display: block;
+    width: 550px;
+    height: 750px;
+    margin: auto;
+    position: relative;
+}
+
+#calculator-buttons {
+    background-color: cornflowerblue;
+    width: 80%;
+    margin: auto auto 0 auto;
+}
+
+#calculator-left {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#calculator-numbers {
+    display: block;
+    background-color: crimson;
+}
+
+#calculator-operators {
+    background-color: darkblue;
+    float: right;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+#calculator-main-display {
+    background-color: darkgreen;
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    text-align: right;
+    font-size: 100px;
+}
+
+#calculator-secondary-display {
+    background-color: darkkhaki;
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.number-button {
+    background-color: darkslategrey;
+    color: floralwhite;
+}
+
+.operator-container {
+    flex: 0 0 50%;
+    margin: auto;
+}
+
+.operator-button {
+    background-color: orange;
+    color: floralwhite;
+}
+
+#calculator-misc {
+    display: block;
+    background-color: yellow;
+    width: 100%;
+}
+
+.misc-button {
+    background-color: silver;
+    color: black;
+}
+
+.button {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+#zero {
+    padding: 20px;
+    width: 150px;
+    border-radius: 25%;
+}
