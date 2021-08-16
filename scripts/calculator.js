@@ -4,6 +4,8 @@ function start() {
     const operatorButtons = document.querySelectorAll('.operator-button');
     const equalButton = document.querySelector('#equal-button');
     const clearButton = document.querySelector('#clear-button');
+    const negButton = document.querySelector('#neg-button');
+    const percButton = document.querySelector('#perc-button')
     
     let display = document.querySelector('#calculator-main-display');
     let secondaryDisplay = document.querySelector('#calculator-secondary-display');
@@ -38,6 +40,7 @@ function start() {
     }
 
     function getSecondNumber(e) {
+
         operator = e.target.innerText;
         secondaryDisplay.innerText = display.innerText;
         display.innerText = 0;
@@ -45,7 +48,6 @@ function start() {
 
     function performOperation() {
         //get second display number (first num)
-        console.log(display.innerText + secondaryDisplay.innerText)
         if (display.innerText != null && secondaryDisplay.innerText != '---') {
             a = parseFloat(secondaryDisplay.innerText);
             b = parseFloat(display.innerText);
@@ -82,6 +84,7 @@ function start() {
     }
 
     clearButton.addEventListener('click', clearDisplay);
+
 }
 
 start();

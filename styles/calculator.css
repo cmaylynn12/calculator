@@ -1,4 +1,8 @@
 
+body {
+    background-color: violet;
+}
+
 #calculator-body {
     background-color: black;
     display: block;
@@ -46,6 +50,7 @@
     font-size: 100px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 #calculator-secondary-display {
@@ -107,4 +112,8 @@
 
 .button-wrapper {
     margin: 0 auto;
+}
+
+#perc-button, #neg-button {
+    color: gray;
 }
